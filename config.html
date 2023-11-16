@@ -31,7 +31,7 @@
           <ul class="breadcrumb">
         <li id="publishDate">Last Published: 2023-11-16<span class="divider">|</span>
 </li>
-          <li id="projectVersion">Version: 0.1.0-SNAPSHOT</li>
+          <li id="projectVersion">Version: 0.1.0</li>
         <li class="pull-right"><span class="divider">|</span>
 <a href="https://cwe.mitre.org/data/definitions/79.html" target="_blank" class="externalLink">MITRE CWE-79</a></li>
         <li class="pull-right"><span class="divider">|</span>
@@ -77,7 +77,10 @@
 <h1>Configuration</h1>
 <p>x2vc provides various options to control its operation. The options are listed and documented in the
 <a href="https://github.com/x2vc/x2vc/blob/main/src/main/resources/application.conf" class="externalLink">default configuration file</a>.
-There are two ways to override these defaults: specifying individual options or providing an additional configuration file.</p><section>
+There are two ways to override these defaults: specifying individual options or providing an additional configuration file.</p>
+<p><strong>Note:</strong> Due to an <a href="https://github.com/x2vc/x2vc/issues/65" class="externalLink">issue with the command line handling</a>, specifying the
+parameters as shown here currently doesn't work. The best approach is to use an <a href="ide.html">IDE</a> to launch the application with
+the parameters specified as shown - other options are being investigated.</p><section>
 <h2>Setting individual options</h2>
 <p>To change the value of an option, use the command line parameter <code>-D&lt;name&gt;=&lt;value&gt;</code>. For example, to limit the maximum number of threads to 4, use</p>
 
